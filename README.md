@@ -17,7 +17,7 @@ Terraform module to configure an AllSpark SQL Always On Cluster.
 
     module "allspark" {
       source  = "github.com/broomyocymru/tf_azurerm_allspark_sql"
-      allspark = allspark  = "${module.allspark.admin_data}"
+      allspark = "${module.allspark.allspark_data}"
       server_name = "allspark"
       admin_username = "adminusersql"
       admin_password = "reallySecurePassword909!"
